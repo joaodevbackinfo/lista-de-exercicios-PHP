@@ -16,7 +16,34 @@
 
     <main>
 
-    <!-- implementação da solução -->
+   <?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $num1 = $_POST['num1'];
+    $num2 = $_POST['num2'];
+    $num3 = $_POST['num3'];
+
+    $maior = $num1;
+
+    if ($num2 > $maior) {
+        $maior = $num2;
+    }
+
+    if ($num3 > $maior) {
+        $maior = $num3;
+    }
+
+    echo "O maior número é: $maior";
+    }
+    ?>
+
+<form method="post">
+    Primeiro número: <input type="number" name="num1" required><br>
+    Segundo número: <input type="number" name="num2" required><br>
+    Terceiro número: <input type="number" name="num3" required><br>
+    <button type="submit">Verificar Maior</button>
+</form>
+
+
      
     </main>
 </body>

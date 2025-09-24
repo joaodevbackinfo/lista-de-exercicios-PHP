@@ -16,9 +16,27 @@
 
     <main>
 
-    <!-- implementação da solução -->
-     
-    </main>
+   <?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $num = $_POST['num'];
+    $fatorial = 1;
+
+    for ($i = $num; $i >= 1; $i--) {
+        $fatorial *= $i;
+    }
+
+    echo "O fatorial de $num é: $fatorial";
+    }
+    ?>
+
+<form method="post">
+    Digite um número inteiro: <input type="number" name="num" min="0" required><br>
+    <button type="submit">Calcular Fatorial</button>
+</form>
+
+        
+        </main>
+        
 </body>
 
 

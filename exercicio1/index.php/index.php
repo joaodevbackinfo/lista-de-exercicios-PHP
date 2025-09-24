@@ -16,7 +16,19 @@
 
     <main>
 
-    <!-- implementação da solução -->
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $valor = $_POST['valor'];
+        $antecessor = $valor - 1;
+        echo "O antecessor de $valor é $antecessor";
+    }
+    ?>
+
+    <form method="post">
+        Digite um número: <input type="number" name="valor">
+        <button type="submit">Calcular</button>
+    </form>
+
      
     </main>
 </body>
