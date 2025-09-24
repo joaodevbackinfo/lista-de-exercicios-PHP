@@ -2,7 +2,6 @@
 
 Este repositório contém a resolução da lista de exercícios em PHP.
 
-Cada exercício está em sua própria pasta:
 
 - `exercicio1/` → Exercício 1
 - `exercicio2/` → Exercício 2
@@ -15,11 +14,4 @@ Cada exercício está em sua própria pasta:
 - `exercicio9/` → Exercício 9
 - `exercicio10/` → Exercício 10
 
-## Como executar
 
-1. Instale o PHP ou um servidor local (ex: XAMPP).  
-2. Entre na pasta do exercício desejado.  
-3. Execute:  
-
-```bash
-php index.php
